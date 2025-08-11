@@ -34,7 +34,7 @@ A Django-based web application to manage a library system where users can browse
    pip install -r requirements.txt
 
 4. Apply migrations:
-   python manage.py migrate
+   python manage.py migrate,
    python manage.py makemigrations
 
 5. Create a superuser:
