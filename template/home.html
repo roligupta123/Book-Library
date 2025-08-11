@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Library Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .hero {
+      background: linear-gradient(to right, #74ebd5, #acb6e5);
+      background-image: url('./static/library.jpg');
+      background-size: cover;
+      color: white;
+      padding: 60px 0;
+      text-align: center;
+    }
+    .book-card {
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+    .book-card:hover {
+      transform: scale(1.03);
+    }
+    footer {
+      background-color: #343a40;
+      color: #ffffff;
+      padding: 20px 0;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">📚 My Library</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="/books">Books</a></li>
+        <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="/login">Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="container">
+    <h1 class="display-5">Welcome to Our Digital Library</h1>
+    <p class="lead">Explore thousands of books across all genres — for free!</p>
+
+    <form class="d-flex justify-content-center mt-4" action="/search" method="GET">
+      <input class="form-control w-50 me-2" type="search" name="q" placeholder="Search books..." aria-label="Search">
+      <button class="btn btn-light" type="submit">Search</button>
+    </form>
+  </div>
+</section>
+
+<!-- Featured Books -->
+<div class="container py-5">
+  <h2 class="mb-4 text-center">📖 Featured Books</h2>
+  <div class="row g-4">
+    <!-- Book 1 -->
+    <div class="col-md-4">
+      <div class="card book-card">
+        <img src="./static/gatsby.webp" class="card-img-top" alt="Book Cover">
+        <div class="card-body">
+          <h5 class="card-title">The Great Gatsby</h5>
+          <p class="card-text">F. Scott Fitzgerald’s classic novel set in the Jazz Age.</p>
+          <a href="#" class="btn btn-outline-primary">Read More</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Book 2 -->
+    <div class="col-md-4">
+      <div class="card book-card">
+        <img src="static/1984.webp" class="card-img-top" alt="Book Cover">
+        <div class="card-body">
+          <h5 class="card-title">1984</h5>
+          <p class="card-text">George Orwell’s dystopian vision of the future.</p>
+          <a href="#" class="btn btn-outline-primary">Read More</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Book 3 -->
+    <div class="col-md-4">
+      <div class="card book-card">
+        <img src="./static/mockingbird.webp" class="card-img-top" alt="Book Cover">
+        <div class="card-body">
+          <h5 class="card-title">To Kill a Mockingbird</h5>
+          <p class="card-text">Harper Lee’s powerful novel on racial injustice.</p>
+          <a href="#" class="btn btn-outline-primary">Read More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="text-center">
+  <div class="container">
+    <p class="mb-0">© 2025 My Library. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

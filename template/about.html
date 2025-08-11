@@ -1,0 +1,76 @@
+{% extends 'navbar.html' %}
+{% load static %}
+
+{% block title %}
+  About
+{% endblock title %}
+
+{% block body %}
+<div class="container py-5">
+
+  <!-- Hero Section -->
+  <div class="row align-items-center mb-5">
+    <div class="col-lg-6">
+      <h1 class="text-success fw-bold mb-4">Welcome to My Asian Library</h1>
+      <p class="lead">
+        At <strong>My Asian Library</strong>, we believe in the power of books to change lives. Our mission is to provide free, easy, and digital access to thousands of books for students, educators, and book lovers around the globe.
+      </p>
+      <p>
+        Whether you're looking to discover new genres or dive into academic resources, our growing collection is designed to serve your curiosity. Our platform is clean, fast, and user-friendly — ideal for lifelong learners.
+      </p>
+      <a href="{% url 'book_list' %}" class="btn btn-outline-primary rounded-pill px-4 py-2 mt-3">
+        📚 Explore Books
+      </a>
+    </div>
+    <div class="col-lg-6 text-center">
+      <img src="/static/book.jpg" alt="Library hero"
+        class="img-fluid rounded-4 shadow">
+    </div>
+  </div>
+
+  <!-- Feature Icons -->
+  <div class="row text-center mb-5">
+    <div class="col-md-4 mb-4">
+      <i class="fas fa-book fa-3x text-primary mb-3"></i>
+      <h5 class="fw-bold">Vast Book Collection</h5>
+      <p>Thousands of books from classic literature to modern topics.</p>
+    </div>
+    <div class="col-md-4 mb-4">
+      <i class="fas fa-globe fa-3x text-primary mb-3"></i>
+      <h5 class="fw-bold">Accessible Anywhere</h5>
+      <p>Enjoy seamless access on mobile, tablet, or desktop.</p>
+    </div>
+    <div class="col-md-4 mb-4">
+      <i class="fas fa-user-cog fa-3x text-primary mb-3"></i>
+      <h5 class="fw-bold">Admin Friendly</h5>
+      <p>Easily manage the entire collection from the dashboard.</p>
+    </div>
+  </div>
+
+  <!-- Image Gallery -->
+  <h2 class="text-center fw-bold mb-4">Our Library in Pictures</h2>
+  <div class="row g-3">
+    <div class="col-sm-6 col-md-4">
+      <img src="/static/lib1.jpg" class="img-fluid rounded-4 shadow" alt="Library shelf">
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <img src="/static/book1.jpg" class="img-fluid rounded-4 shadow" alt="Reading area">
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <img src="https://images.unsplash.com/photo-1588072432836-e10032774350" class="img-fluid rounded-4 shadow" alt="Open book">
+    </div>
+    <div class="col-sm-6 col-md-6">
+      <img src="https://images.unsplash.com/photo-1553729459-efe14ef6055d" class="img-fluid rounded-4 shadow" alt="Library aisle">
+    </div>
+    <div class="col-sm-6 col-md-6">
+      <img src="/static/stu2.jpg" class="img-fluid rounded-4 shadow" alt="Book stack">
+    </div>
+  </div>
+
+  <!-- Contact Prompt -->
+  <div class="text-center mt-5">
+    <p class="lead">Want to connect with us?</p>
+    <a href="{% url 'contact' %}" class="btn btn-outline-dark rounded-pill px-4 py-2">📞 Contact Us</a>
+  </div>
+</div>
+{% endblock body %}
