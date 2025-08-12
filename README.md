@@ -31,18 +31,21 @@ A Django-based web application to manage a library system where users can browse
   venv\Scripts\activate
 
 3. Install dependencies:
+  ```bash
    pip install -r requirements.txt
 
-4. Apply migrations:
+5. Apply migrations:
+```bash
    python manage.py migrate,
    python manage.py makemigrations
 
-5. Create a superuser:
+6. Create a superuser:
+```bash
    python manage.py createsuperuser
 
-6. Run the development server:
+7. Run the development server:
    python manage.py runserver
 
-7. Open the app in your browser:
+8. Open the app in your browser:
    http://127.0.0.1:8000/
 
