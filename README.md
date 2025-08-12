@@ -68,6 +68,5 @@ Do you want me to create that polished full README now?
 
 ## Author  
 **Roli Gupta**  
-📧 guptaroli067@gmail.com
-💻 [GitHub Profile][(https://github.com/roligupta123])
-
+📧 guptaroli067@gmail.com  
+💻 [GitHub Profile](https://github.com/roligupta123)
