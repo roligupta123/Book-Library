@@ -31,13 +31,12 @@ A Django-based web application to manage a library system where users can browse
   venv\Scripts\activate
 
 3. Install dependencies:
-  ```bash
-   pip install -r requirements.txt
+```bash
+pip install -r requirements.txt
 
-4. Apply migrations:
-  ```bash
-  python manage.py migrate,
-  python manage.py makemigrations
+4. Apply Migration:
+python manage.py migrate,
+python manage.py makemigrations
 
 5. Run the development server:
    python manage.py runserver
