@@ -64,3 +64,10 @@ If you’d like, I can **rewrite your whole README** from start to finish with:
 and make it look professional.  
 
 Do you want me to create that polished full README now?
+
+
+## Author  
+**Roli Gupta**  
+📧 guptaroli067@gmail.com
+💻 [GitHub Profile][(https://github.com/roligupta123])
+
