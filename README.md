@@ -47,3 +47,20 @@ A Django-based web application to manage a library system where users can browse
    ```bash
    http://127.0.0.1:8000/
 
+
+
+---
+
+This way:
+- On GitHub, your name will appear nicely at the bottom.
+- You can link to your GitHub profile or email.
+- You can even add a profile picture using Markdown if you want.
+
+If you’d like, I can **rewrite your whole README** from start to finish with:
+- Project title
+- Description
+- Setup steps (these commands)
+- Author section with your name and GitHub link  
+and make it look professional.  
+
+Do you want me to create that polished full README now?
