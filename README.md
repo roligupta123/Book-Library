@@ -34,18 +34,14 @@ A Django-based web application to manage a library system where users can browse
   ```bash
    pip install -r requirements.txt
 
-5. Apply migrations:
-```bash
-   python manage.py migrate,
-   python manage.py makemigrations
+4. Apply migrations:
+  ```bash
+  python manage.py migrate,
+  python manage.py makemigrations
 
-6. Create a superuser:
-```bash
-   python manage.py createsuperuser
-
-7. Run the development server:
+5. Run the development server:
    python manage.py runserver
 
-8. Open the app in your browser:
+6. Open the app in your browser:
    http://127.0.0.1:8000/
 
